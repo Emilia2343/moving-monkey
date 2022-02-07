@@ -12,9 +12,15 @@ closedFace.addEventListener('click',() => {
 })
 
 openFace.addEventListener('click',() => {
-    if(closedFace.classList.contains('closed')){
-        closedFace.classList.add('active');
+    if(speachless.classList.contains('noSpeak')){
+        speachless.classList.add('active');
         openFace.classList.remove('active');
     }
 })
 
+speachless.addEventListener('click',() => {
+    if(closedFace.classList.contains('closed')){
+        closedFace.classList.add('active');
+        speachless.classList.remove('active');
+    }
+})
